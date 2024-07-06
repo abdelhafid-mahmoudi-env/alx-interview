@@ -3,13 +3,11 @@
 Solution to the lockboxes problem.
 """
 
+
 def canUnlockAll(boxes):
     """
     Determines whether a series of locked boxes can be opened
     based on keys that can be attained.
-
-    Args:
-        boxes (list): A list of lists where each sublist represents a box and contains keys to other boxes.
 
     Returns:
         bool: True if all boxes can be opened, False otherwise.
