@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """
-Function that calculates the min operations to copy and paste letters
+Function that calculates the minimum number
+of operations to achieve exactly n 'H' characters.
 """
 
 
 def minOperations(n):
-    nOpe = 0
-    minOpe = 2
+    operations_count = 0
+    divisor = 2
     while n > 1:
-        while n % minOpe == 0:
-            nOpe += minOpe
-            n /= minOpe
-        minOpe += 1
-    return nOpe
+        while n % divisor == 0:
+            operations_count += divisor
+            n /= divisor
+        divisor += 1
+    return operations_count
