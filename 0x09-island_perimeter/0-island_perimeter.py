@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a function that returns."""
 
+
 def island_perimeter(grid):
     """The perimeter of an island represented by 1s."""
     perimeter = 0
